@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+.login{
+    background: linear-gradient(#21c08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width:300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label{
+    font-size: 14px;
+}
+
+.login__container--remember{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember a:hover{
+    text-decoration: underline;
+}
+
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register{
+    font-size: 14px;
+}
+
+.login__container--register a{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container--register a:hover{
+    text-decoration: underline;
+}
+
+.input{
+    background-color: transparent;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    border-right: 0px;
+    border-left: 0px;
+    font-family: 'Muli', 'sans-serif';
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+.button{
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', 'sans-serif';
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #AB88FF;
+}
+
+.footer a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src="../logo-platzi-video-BW2.png"/>
+    </header>  
+
+    <section class="login">
+        <section class="login__container">
+            <h2>Inicia Sesión</h2>
+            <form class="login__container--form">
+                <input class="input" type="text" name="" id="" placeholder="Correo">
+                <input class="input" type="password" name="" id="" placeholder="Contraseña">
+                <button class="button">Iniciar Sesión</button>
+                <div class="login__container--remember">
+                    <label>
+                        <input type="checkbox" id="cbox1" value="checkbox">Recuerdame
+                    </label>
+                    <a href="#">Olvide mi Contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="google-icon.png" alt="">Inicia sesión con google
+                </div>
+                <div>
+                    <img src="twitter-icon.png" alt="">Inicia sesión con Twitter
+                </div>
+            </section>
+            <p class="login__container--register">No tiene nunguna cuenta <a href="#">Registrate</a></p>
+        </section>
+    </section>
+    <footer class="footer">
+        <a href="#">Terminos de Uso</a>
+        <a href="#">Declarion de privacidad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
